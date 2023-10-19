@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
     return (
-      <a href="a" className="action">Sobre</a>
+      <a href="#to-do" className="action">Sobre</a>
   );
 }
 

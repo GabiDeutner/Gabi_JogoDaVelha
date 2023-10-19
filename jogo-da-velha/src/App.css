@@ -1,7 +1,12 @@
-.action{
-  font-weight: bold;
-  font-size: 14px;
-  color: #707070;
-  text-decoration: none;
-  text-transform: uppercase;
+.card-light {
+  height: 85vw;
+  width: 85vw;
+  display: flex;
+  margin: auto;
+}
+
+.hashtag-game {
+  height: 90%;
+  width: 90%;
+  margin: auto;
 }

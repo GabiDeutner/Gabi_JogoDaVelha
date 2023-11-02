@@ -1,6 +1,17 @@
-.hashtag{
+.card {
+	padding: 15px;
+}
+
+.hashtag {
 	display: grid;
 	height: 100%;
-	grid-template-columns: 33.333% 33.333% 33.333%;
-	grid-template-rows: 33.333% 33.333% 33.333%;	
+	background-color: var(--color-third);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 3px;
+	grid-row-gap: 3px;
+}
+
+.hashtag > .item {
+	background: var(--color-zero);
 }

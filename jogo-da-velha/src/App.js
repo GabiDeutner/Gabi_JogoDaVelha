@@ -9,9 +9,7 @@ function App(){
 	return (
         <>
         <Header />
-	    <Card>
-	       <Player player="o"/>
-        </Card>
+        <Hashtag />
             </>
 	);
 	}

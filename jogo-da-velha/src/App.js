@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './objects/Card';
-import Card from './objects/Player';
+import Player from './objects/Player';
 import Header from './components/Header';
 
 
@@ -8,10 +8,11 @@ import Header from './components/Header';
 function App(){
 	return (
         <>
-            <Card />
-            <Player player="x"/>
-            <Header />
-        </>
+        <Header />
+	    <Card>
+	       <Player player="o"/>
+        </Card>
+            </>
 	);
 	}
 

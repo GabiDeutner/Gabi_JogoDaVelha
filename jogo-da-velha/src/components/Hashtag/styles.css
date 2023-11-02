@@ -8,10 +8,12 @@
 	background-color: var(--color-third);
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-column-gap: 3px;
-	grid-row-gap: 3px;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
 }
 
 .hashtag > .item {
 	background: var(--color-zero);
+	display: flex;
+	justify-content: center;
 }

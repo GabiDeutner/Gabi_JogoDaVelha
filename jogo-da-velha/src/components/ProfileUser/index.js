@@ -6,12 +6,13 @@ import SocialMedias from "../../objects/SocialMedias";
 const ProfileUser = ({ photo }) => (
   <dl className="profile-user">
     <dd className="photo">
-      <AvatarProfile src={photo} alt="Profile do Marco Bruno" />
+      <AvatarProfile src={photo} alt="Profile da Gabi Deutner" />
     </dd>
-    <dt className="title">Marco Bruno</dt>
+    <dt className="title">Gabi Deutner</dt>
     <dd className="description">
-      Migrei de palhaço para Dev. Front-End/UX e agora eu trabalho como streamer
-      de código, instrutor e dev na CollabCode
+    Sou Desenvolvedora Web e Analista de Sistemas com experiência em sistemas bancários, 
+    formada pela Faculdade de Tecnologia de São Paulo em Informática para Negócios e graduada 
+    com bacharelado em Farmácia e Bioquímica pela Universidade de São Paulo.
     </dd>
     <dd className="medias">
       <SocialMedias />

@@ -1,17 +1,12 @@
-.app{
-	text-align: center;
+.card-light {
+    height: 85vw;
+    width: 85vw;
+    display: flex;
+    margin: auto;
 }
 
-.app > .header{
-	width: 90vw;
-	margin: 0 auto 85px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.app > .card {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 80vw;
-	height: 80vw;
+.hashtag-game {
+    height: 90%;
+    width: 90%;
+    margin: auto;
 }

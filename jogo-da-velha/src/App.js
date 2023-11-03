@@ -3,7 +3,7 @@ import Card from './objects/Card';
 import './App.css';
 import Player from './objects/Player';
 import Header from './components/Header';
-import Hashtag from './components/Hashatag';
+import Hashtag from './components/Hashtag';
 
 
 

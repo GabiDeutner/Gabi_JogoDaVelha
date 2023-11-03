@@ -1,7 +1,7 @@
 import React from 'react';
 import playerX from '../../img/player-x.png';
 import playerO from '../../img/player-o.png';
-import '.styles.css';
+import './styles.css';
 
 const Player = (props) => {
 	const players = [];

@@ -41,9 +41,18 @@ const HashtagGame = () => {
     content: ""
   }]);
 
-  const handleClick = id => setPlayers(
-    old => old.map(player => player.id === id ? { id, content: "X" } : player)
-  )
+  const [turn, setTurn] = useState('X');
+  const swapPlayer = () => {
+    if(turn === 'X') setTurn('O');
+    else setTurn('X');
+  }
+
+  const handleClick = id => {
+    setPlayers(
+      old => old.map(player => player.id === id ? { id, content: turn } : player)
+    );
+    swapPlayer();
+  }
 
   return (
     <ul className="hashtag-game">

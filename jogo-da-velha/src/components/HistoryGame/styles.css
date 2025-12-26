@@ -1,19 +1,23 @@
 .history-game {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  display: none;
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .history-game.-active {
-    display: flex;
+  display: block;
 }
 
-.history-game > .item {
-    width: 140px;
-    margin-bottom: var(--spacing-medium);
+.history-game > .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.history-game .tag-game {
-    box-sizing: border-box;
-    width: 100%;    
+.history-game > .list > .item {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
 }

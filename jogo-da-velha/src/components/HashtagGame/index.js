@@ -1,56 +1,29 @@
 import React, { useState } from "react";
 import "./styles.css";
-
 import PlayerGame from "../../objects/PlayerGame";
 
-const HashtagGame = () => {
-  const [players, setPlayers] = useState([{
-    id: 1,
-    content: ""
-  },
-  {
-    id: 2,
-    content: ""
-  },
-  {
-    id: 3,
-    content: ""
-  },
-  {
-    id: 4,
-    content: ""
-  },
-  {
-    id: 5,
-    content: ""
-  },
-  {
-    id: 6,
-    content: ""
-  },
-  {
-    id: 7,
-    content: ""
-  },
-  {
-    id: 8,
-    content: ""
-  },
-  {
-    id: 9,
-    content: ""
-  }]);
+const HashtagGame = ({ callback }) => {
+  const [players, setPlayers] = useState([
+    { id: 1, content: "" }, { id: 2, content: "" }, { id: 3, content: "" },
+    { id: 4, content: "" }, { id: 5, content: "" }, { id: 6, content: "" },
+    { id: 7, content: "" }, { id: 8, content: "" }, { id: 9, content: "" }
+  ]);
 
   const [turn, setTurn] = useState('X');
+
   const swapPlayer = () => {
-    if(turn === 'X') setTurn('O');
-    else setTurn('X');
+    setTurn(old => (old === 'X' ? 'O' : 'X'));
   }
 
   const handleClick = id => {
-    setPlayers(
-      old => old.map(player => player.id === id ? { id, content: turn } : player)
+    const playerClicked = players.find(p => p.id === id);
+    if (playerClicked.content !== "") return;
+
+    setPlayers(old => 
+      old.map(player => player.id === id ? { id, content: turn } : player)
     );
+
+    callback(turn);
     swapPlayer();
   }
 

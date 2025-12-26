@@ -14,34 +14,35 @@ import HistoryGame from "./components/HistoryGame";
 const App = () => {
   const [aboutActive, setAboutActive] = useState(false);
   const [historyActive, setHistoryActive] = useState(false);
-  
-  // EDGE CASE: Empty history array
-  const history = []
-  // OR potentially null/undefined history:
-  // const history = null;
+  const [history, setHistory] = useState([]);
 
   const handleClickShowHideMenu = () => setAboutActive(old => !old);
   const handleClickShowHideHistory = () => setHistoryActive(old => !old);
+
+  const addHistory = (player) => {
+    setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
+  };
 
   return (
     <>
       <HeaderGame onClick={handleClickShowHideMenu} />
       <CardLight>
-        <HashtagGame />
+        <HashtagGame callback={addHistory} />
       </CardLight>
+      
       <InputCheckbox 
         id="show" 
         value="Mostrar eventos" 
         onClick={handleClickShowHideHistory} 
-        // Edge case: Disable checkbox if no history exists
-        disabled={!history || history.length === 0}
+        disabled={history.length === 0}
       />
+      
+      {}
       <HistoryGame 
         tags={history} 
         isActive={historyActive}
-        // Add a prop to handle empty state
-        emptyMessage="Nenhum evento registrado ainda"
       />
+
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClickShowHideMenu} />
         <ProfileUser photo={Photo} />

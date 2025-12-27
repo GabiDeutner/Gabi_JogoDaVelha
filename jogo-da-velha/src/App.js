@@ -20,7 +20,11 @@ const App = () => {
   const handleClickShowHideHistory = () => setHistoryActive(old => !old);
 
   const addHistory = (player) => {
-    setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
+    const playerNumber = player.toUpperCase() === 'X' ? '1' : '2';
+    setHistory(old => [
+      ...old, 
+      `Jogador ${playerNumber} adicionou ${player.toUpperCase()}`
+    ]);
   };
 
   return (
@@ -37,7 +41,6 @@ const App = () => {
         disabled={history.length === 0}
       />
       
-      {}
       <HistoryGame 
         tags={history} 
         isActive={historyActive}

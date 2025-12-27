@@ -1,0 +1,20 @@
+.logo-game {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3436;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo-game > span {
+  color: #ff7675;
+  font-weight: 300;
+}
+
+.logo-game.-light {
+  color: white;
+}
+
+.logo-game.-light > span {
+  color: #dfe6e9;
+}

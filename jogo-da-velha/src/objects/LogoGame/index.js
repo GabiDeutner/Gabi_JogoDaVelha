@@ -1,14 +1,10 @@
 import React from "react";
-
-import CollabCode from "../../img/collabcode.png";
-import CollabCodeLight from "../../img/collabcodelight.png";
+import "./styles.css";
 
 const LogoGame = ({ light }) => (
-  <img
-    className="logo-game"
-    src={`${light ? CollabCodeLight : CollabCode}`}
-    alt="Logo da CollabCode"
-  />
+  <h1 className={`logo-game ${light ? "-light" : ""}`}>
+    GABI<span>DEUTNER</span>
+  </h1>
 );
 
 export default LogoGame;

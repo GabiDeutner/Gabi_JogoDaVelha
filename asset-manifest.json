@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Gabi_JogoDaVelha/static/css/main.d3456aa6.css",
+    "main.js": "/Gabi_JogoDaVelha/static/js/main.4a235250.js",
+    "static/media/profile.jpg": "/Gabi_JogoDaVelha/static/media/profile.49660ef781e908cdfba6.jpg",
+    "index.html": "/Gabi_JogoDaVelha/index.html",
+    "main.d3456aa6.css.map": "/Gabi_JogoDaVelha/static/css/main.d3456aa6.css.map",
+    "main.4a235250.js.map": "/Gabi_JogoDaVelha/static/js/main.4a235250.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3456aa6.css",
+    "static/js/main.4a235250.js"
+  ]
+}

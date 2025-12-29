@@ -1,19 +1,24 @@
 .history-game {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
 }
 
-.history-game.-active {
-    display: flex;
-}
-
-.history-game > .item {
-    width: 140px;
-    margin-bottom: var(--spacing-medium);
+.history-game .item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .history-game .tag-game {
-    box-sizing: border-box;
-    width: 100%;    
+  font-family: sans-serif;
+  color: #7f8c8d;
+  font-size: 14px;
+  text-align: center;
 }

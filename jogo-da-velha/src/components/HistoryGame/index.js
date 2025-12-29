@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
 import "./styles.css";
 
-import TagGame from '../../objects/TagGame';
+import TagGame from "../../objects/TagGame";
 
-const HistoryGame = ({ tags, isActive = false }) => (
-    <ol className={`history-game ${isActive ? "-active" : ""}`}>
-        {tags.map(({ content = "", className = "" }, key) => (
-            <li className="item" key={key}>
-                <TagGame content={content} className={className} />
-            </li>
-        ))}
-    </ol>
+const HistoryGame = ({ tags, isActive }) => (
+  <aside className={`history-game ${isActive ? "-active" : ""}`}>
+    <ul className="list">
+      {tags.map((content, key) => (
+        <li key={key} className="item">
+          <TagGame content={content} />
+        </li>
+      ))}
+    </ul>
+  </aside>
 );
 
 export default HistoryGame;

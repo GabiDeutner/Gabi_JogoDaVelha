@@ -1,11 +1,37 @@
 .header-internal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 35px;
-  }
-  
-  .header-internal > .about-link {
-    margin-left: auto;
-    margin-right: var(--spacing-small);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.header-internal .about-close {
+  background: none;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.header-internal .about-close:hover {
+  transform: scale(1.05);
+  color: var(--color-primary, #ff7675);
+}
+
+.header-internal .about-close span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.header-internal > .logo-game {
+  margin: 0;
+}

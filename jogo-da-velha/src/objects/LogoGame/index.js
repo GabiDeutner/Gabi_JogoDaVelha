@@ -1,14 +1,18 @@
 import React from "react";
+import "./styles.css";
 
-import CollabCode from "../../img/collabcode.png";
-import CollabCodeLight from "../../img/collabcodelight.png";
-
-const LogoGame = ({ light }) => (
-  <img
-    className="logo-game"
-    src={`${light ? CollabCodeLight : CollabCode}`}
-    alt="Logo da CollabCode"
-  />
+const LogoGame = ({ light, onClick }) => (
+  <div className="logo-wrapper" style={{ textAlign: 'center' }}>
+    <h1 className={`logo-game ${light ? "-light" : ""}`}>
+      GABI<span>DEUTNER</span>
+    </h1>
+    {}
+    {!light && (
+      <button className="about-button" onClick={onClick}>
+        SOBRE
+      </button>
+    )}
+  </div>
 );
 
 export default LogoGame;

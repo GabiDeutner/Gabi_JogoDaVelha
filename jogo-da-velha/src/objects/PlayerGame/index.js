@@ -1,6 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const PlayerGame = ({ content }) => <div className="player-game">{content}</div>;
+const PlayerGame = ({ content }) => (
+  <span className="player-game" data-content={content}>
+    {content}
+  </span>
+);
 
 export default PlayerGame;

@@ -6,11 +6,9 @@ const ProfileUser = ({ photo }) => (
     <img className="avatar" src={photo} alt="Foto de Gabi Deutner" />
     <h1 className="title">Gabi Deutner</h1>
     <p className="description">
-      Atuo como Desenvolvedora de Sistemas desde 2020 e sou Pós-Graduada e Especialista 
-      em Engenharia de Software pela PUC Minas. Sou graduada em Informática para Negócios 
-      pela FATEC-SP e possuo bacharelado em Farmácia e Bioquímica pela USP - Universidade 
-      de São Paulo, formação que me conferiu rigor científico e uma visão analítica 
-      estruturada para a resolução de problemas complexos em tecnologia.
+      Programadora, Engenheira de Software e ex-USPiana. Troquei as fórmulas químicas pelas linhas de código e, 
+      desde 2020, transformo problemas complexos em sistemas eficientes. Minha especialidade? Analisar cenários 
+      e encontrar a melhor jogada, seja no desenvolvimento de softwares ou aqui, neste tabuleiro!
     </p>
     
     {}

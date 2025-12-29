@@ -1,24 +1,24 @@
 .history-game {
-  display: none;
-  margin-top: 15px;
-  margin-left: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.history-game.-active {
-  display: block;
-}
-
-.history-game > .list {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
 }
 
-.history-game > .list .item {
-  display: block;
+.history-game .item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.history-game .tag-game {
+  font-family: sans-serif;
+  color: #7f8c8d;
+  font-size: 14px;
+  text-align: center;
 }

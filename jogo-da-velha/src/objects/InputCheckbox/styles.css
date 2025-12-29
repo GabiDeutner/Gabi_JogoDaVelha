@@ -1,33 +1,18 @@
 .input-checkbox {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 10px 0;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.input-checkbox > .input {
-  margin: 0;
-  margin-right: 10px;
-  cursor: pointer;
-  width: 18px;
-  height: 18px;
-}
-
-.input-checkbox > .label {
-  cursor: pointer;
-  font-size: 16px;
+  margin: 20px auto;
   font-family: sans-serif;
   color: #333;
   user-select: none;
+  width: fit-content;
 }
 
-.input-checkbox:hover > .label {
-  color: #ff7675; 
-}
-
-.input-checkbox > .input:disabled + .label {
-  cursor: not-allowed;
-  opacity: 0.4;
+.input-checkbox input {
+  margin-right: 15px; 
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
